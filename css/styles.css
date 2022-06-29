@@ -51,8 +51,6 @@ img {
   padding-top: 24px;
   padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
-
-  
 }
 
 .header > .conteiner {
@@ -92,7 +90,6 @@ img {
 .nav .item {
   display: block;
   position: relative;
-  
 }
 
 .nav .item:not(:last-child) {
@@ -106,6 +103,8 @@ img {
   text-decoration: none;
 
   color: var(--main-color);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav .menu:hover,
@@ -123,7 +122,7 @@ img {
   border-radius: 2px;
 
   position: absolute;
-  bottom: -33px;;
+  bottom: -33px;
 }
 
 .nav .menu.current {
@@ -153,6 +152,8 @@ img {
   text-decoration: none;
 
   color: var(--text-color);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact:hover,
@@ -231,6 +232,8 @@ img {
   background-color: var(--hoover-color);
 
   cursor: pointer;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero .button:hover,
@@ -381,6 +384,9 @@ img {
   background-color: var(--main-background-color);
 
   cursor: pointer;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team .link:hover,
@@ -428,6 +434,8 @@ img {
 
   color: var(--icon-color);
   cursor: pointer;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients .icon {
@@ -474,6 +482,10 @@ img {
   border: 0 solid transparent;
   border-radius: 4px;
   cursor: pointer;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio .button:hover,
@@ -499,6 +511,8 @@ img {
   background: var(--main-background-color);
 
   cursor: pointer;
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio .card:nth-child(3n + 3) {
@@ -589,14 +603,16 @@ img {
   letter-spacing: 0.03em;
 
   color: rgba(255, 255, 255, 0.6);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer .item:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.contact:hover,
-.contact:focus {
+.footer .contact:hover,
+.footer .contact:focus {
   color: var(--hoover-color);
 }
 
@@ -634,6 +650,8 @@ img {
   background-color: rgba(255, 255, 255, 0.1);
 
   cursor: pointer;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer .link:hover,
